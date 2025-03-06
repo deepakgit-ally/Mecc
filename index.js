@@ -32,10 +32,10 @@ const upload = multer({ storage: storage });
 const uploadMultiple = upload.array('images', 6);
 // MSSQL connection config
 const config = {
-  user: 'sa',
-  password: '123456',
+  user: 'u343589173_mecotton',
+  password: 'Boat@1245',
   server: '82.25.104.25', // Use your VPS public IP
-  database: 'MeCotton',
+  database: 'u343589173_mecotton',
   options: { 
     encrypt: false,  // Set false if you don't have SSL
     trustServerCertificate: true
