@@ -34,10 +34,15 @@ const uploadMultiple = upload.array('images', 6);
 const config = {
   user: 'sa',
   password: '123456',
-  server: 'DESKTOP-GNJKD9D\\',  // Replace with your SQL Server instance name
+  server: '82.25.104.25', // Use your VPS public IP
   database: 'MeCotton',
-  options: { encrypt: true, trustServerCertificate: true },
+  options: { 
+    encrypt: false,  // Set false if you don't have SSL
+    trustServerCertificate: true
+  },
+  port: 1433 // Ensure SQL Server is listening on this port
 };
+
 
 const getProductById = async (productId) => {
   try {
