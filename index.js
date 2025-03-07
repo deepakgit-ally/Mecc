@@ -33,13 +33,10 @@ const uploadMultiple = upload.array('images', 6);
 // MSSQL connection config
 const config = {
   user: 'cottonuser',
-  password: 'mmm@123###',
-  server: '162.215.230.14', 
+  password: 'mmm@123##',
+  server: '162.215.230.14',  // Replace with your SQL Server instance name
   database: 'go4ongvh_cotton',
-  options: { 
-    encrypt: false,  // Set false if you don't have SSL
-    trustServerCertificate: true
-  }
+  options: { encrypt: true, trustServerCertificate: true },
 };
 
 
