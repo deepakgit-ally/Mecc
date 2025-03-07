@@ -34,7 +34,7 @@ const uploadMultiple = upload.array('images', 6);
 const config = {
   user: 'u343589173_mecotton',
   password: 'Boat@1245',
-  server: '127.0.0.1:3306', 
+  server: '127.0.0.1,3306', 
   database: 'u343589173_mecotton',
   options: { 
     encrypt: false,  // Set false if you don't have SSL
