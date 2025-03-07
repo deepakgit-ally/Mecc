@@ -39,8 +39,7 @@ const config = {
   options: { 
     encrypt: false,  // Set false if you don't have SSL
     trustServerCertificate: true
-  },
-  port: 1433 // Ensure SQL Server is listening on this port
+  }
 };
 
 
